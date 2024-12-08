@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Patinha Feliz</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link para o CSS customizado -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #FFFBF2;
+            /* Cor de fundo suave */
+        }
+
+        .card {
+            border-radius: 15px;
+            background-color: #FFFFFF;
+            border: none;
+        }
+
+        h3 {
+            color: #FF6F61;
+            /* Cor vibrante para o título */
+        }
+
+        h5 {
+            color: #FFAB40;
+            /* Cor complementar para o subtítulo */
+        }
+
+        .form-control {
+            border-radius: 8px;
+            border: 1px solid #FFAB40;
+        }
+
+        .btn-primary {
+            background-color: #FF6F61;
+            border-color: #FF6F61;
+            border-radius: 8px;
+        }
+
+        .btn-primary:hover {
+            background-color: #FFAB40;
+            border-color: #FFAB40;
+        }
+
+        .text-primary {
+            color: #FF6F61;
+        }
+
+        .text-primary:hover {
+            color: #FFAB40;
+        }
+
+        hr {
+            border-top: 1px solid #FF6F61;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+
+<body class="bg-light">
+    <div class="container">
+        <div class="row justify-content-center align-items-center" style="height: 100vh;">
+            <div class="col-md-6">
+                <div class="card shadow-lg">
+                    <div class="card-body">
+                        <h3 class="text-center text-primary">Cadastro - Patinha Feliz</h3>
+                        <h5 class="text-center mb-4">Preencha os campos abaixo para criar sua conta</h5>
+                        <form action="cadastro_process.php" method="POST">
+                            <div class="mb-3">
+                                <label for="nome" class="form-label">Nome Completo</label>
+                                <input type="text" class="form-control" id="nome" name="nome" required
+                                    placeholder="Digite seu nome completo">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" required
+                                    placeholder="Digite seu email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="username" class="form-label">Usuário</label>
+                                <input type="text" class="form-control" id="username" name="username" required
+                                    placeholder="Escolha seu nome de usuário">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Senha</label>
+                                <input type="password" class="form-control" id="password" name="password" required
+                                    placeholder="Escolha uma senha">
+                            </div>
+                            <div class="mb-3">
+                                <label for="confirm_password" class="form-label">Confirmar Senha</label>
+                                <input type="password" class="form-control" id="confirm_password"
+                                    name="confirm_password" required placeholder="Confirme sua senha">
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <button type="submit" class="btn btn-primary">Cadastrar</button>
+                                <a href="login.html" class="text-decoration-none text-primary">Já tem uma conta? Faça
+                                    login</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
